@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Droid+Sans">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Sanchez">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="./script.js"></script>
+</head>
+
+<body>
+	<audio class="audio"> <source src="https://dl.dropbox.com/s/1w1rtajm3qym49j/96063__reecord2__alarm-beep-electronic.wav" type="audio/wav" preload="auto"> </audio>
+
+		<section class="title"> 
+			<h1>Pomodoro Timer <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique"><i class="fa fa-question-circle" aria-hidden="true"></i></a></h1> 
+		</section>
+
+		<section class="subheader">
+			<h2 class="workSub work">WORK</h2>
+			<h2 class="playSub play">BREAK</h2>
+		</section>
+
+		<section class="clock">
+			<span id="minutes">00</span>:<span id="seconds">00</span>
+
+			<section class="clockButtons">
+
+				<button id="play" class="btn btn-default">
+					<i class="fa fa-play fa-2x"></i>
+				</button>
+
+				<button id="pause" class="btn btn-default">
+					<i class="fa fa-pause fa-2x"></i>
+				</button>
+
+				<button id="reset" class="btn btn-default">
+					<i class="fa fa-undo fa-2x"></i>
+				</button>
+
+			</section>
+
+		</section>
+
+		<section class="controls">
+
+			<button id="controlToggle" class="btn btn-default">Controls <i class="fa fa-cog" aria-hidden="true"></i></button>
+
+			<section id="controlPanel">
+			<h2>Session Length</h2>
+				<section id="workControls" class="work">
+					<h3>Work</h3>
+					<button id="workPlus" class="btn btn-default">
+						<i class="fa fa-plus"></i>
+					</button>
+					<span id="workTimer">25</span>
+					<button id="workMinus" class="btn btn-default">
+						<i class="fa fa-minus"></i>
+					</button>
+				</section>
+
+				<section id="playControls" class="play">
+					<h3>Break</h3>
+					<button id="playPlus" class="btn btn-default">
+						<i class="fa fa-plus"></i>
+					</button>
+					<span id="playTimer">5</span>
+					<button id="playMinus" class="btn btn-default">
+						<i class="fa fa-minus"></i>
+					</button>
+				</section>
+
+			</section>
+
+		</section>
+</body>

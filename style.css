@@ -1,0 +1,256 @@
+/*   Colors
+	orange: #F9690E;
+	mint: #2ABB9B;
+	blue: #3498DB;
+	dark blue: #1B4F72;
+	grey: #E9E9E9;
+	
+*/
+
+/* Initial styling, for everything */
+
+	html{
+		font-size: 16px;
+	}
+
+	body{
+		font-size: 10px;
+	}
+
+	.work{
+		color: #3498DB;
+	}
+
+	.play{
+		color: #2ABB9B;
+	}
+
+	/* Title Bar */
+
+		.title>h1{
+			font-weight: bold;
+			font-size: 7em;
+			letter-spacing: .08em;
+			padding: 1% 0;
+			font-family:  "Sanchez";
+			color:  #F9690E;
+			text-align: center;
+		}
+
+		.title{
+			margin: 0 0 3% 0;
+			border-bottom: 1px solid #ccc;
+		}
+
+		a .fa-question-circle{
+			font-size: 30px;
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+	/* Subtitles */
+		h2{
+			display: inline;
+			font-size: 5em;
+			font-family: "Oswald";
+			letter-spacing: .05em;
+		}
+
+		.subheader{
+			text-align: center;
+			padding: 1% 0;
+		}
+
+		.workSub, .playSub{
+			padding: .3% 4%;
+		}
+
+		.workSub{
+			margin: 0 7% 0 0;
+		}
+
+	/* Clock */
+		.clock{
+			text-align: center;
+			font-size: 9em;
+			font-family: "Oswald";
+			display: block;
+			width: 70%;
+			margin: 2% 15%;
+			border: 1px solid black;
+		}
+
+		.clock button{
+			width: 10%;
+		}
+
+	/* Control Panel */
+		.controls{
+			text-align: center;
+		}
+		.controls h2{
+			display: block;
+			text-align: center;
+			font-size: 4em;
+			font-family: "Sanchez";
+			color: #F9690E;
+			width: 40%;
+			border-bottom: 1px solid #ccc;
+			margin: 0 30% 1% 30%;
+		}
+
+		#controlToggle{
+			font-family: "Oswald";
+			font-size: 4em;
+			text-align: center;
+			margin: 0 0 1% 0;
+		}
+
+		#workControls, #playControls{
+			display: inline-block;
+			margin: 1% 1%;
+			width: 12%;
+			border: 1px solid #ccc;
+			padding-bottom: 1%;
+			border-radius: 5%;
+		}
+
+		#controlPanel span{
+			font-size: 3em;
+			font-family: "Oswald";
+			line-height: 3%;
+			padding: 0 3%;
+		}
+
+		#controlPanel button{
+			text-align: center;
+			width: 25%;
+			line-height: 5%;
+		}
+
+		h3{
+			font-family: "Droid Sans";
+			font-size: 2.5em;
+			margin-bottom: 20%;
+		}
+
+
+/* Styling that changes depending on which timer is running */
+	.workActive{
+		background-color: rgba(52, 152, 219, .7);
+		border: 2px solid #ccc;
+		color: white;
+	}
+
+	.on{
+		border: 1px solid #ccc;
+		border-radius: 5%;
+		-webkit-box-shadow: 10px 10px 5px 0px rgba(80,80,80,1);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(80,80,80,1);
+        box-shadow: 10px 10px 5px 0px rgba(80,80,80,1);
+	}
+
+	.off{
+		opacity: .7;
+		border: 1px solid #ccc;
+		border-radius: 5%;
+		-webkit-box-shadow: inset 10px 10px 10px -5px rgba(181,181,181,1);
+        -moz-box-shadow: inset 10px 10px 10px -5px rgba(181,181,181,1);
+        box-shadow: inset 10px 10px 10px -5px rgba(181,181,181,1);
+	}
+
+	.playActive{
+		background-color: rgba(42, 187, 155,.7);
+		border: 2px solid #ccc;
+		color: white;
+	}
+
+
+/* Media Queries */
+
+	/* Tablets */
+		@media only screen and (min-width : 600px) and (max-width : 800px){
+			
+			h1{
+				font-size: 5em;
+			}
+      
+      .clockButtons{
+        margin-top: 0;
+        padding-top: 0;
+      }
+      
+      .clock button{
+        margin-top: 0;
+      }
+      
+      .controls h2{
+        width: 100%;
+        text-align: center;
+        margin: 1% 0;
+      }
+
+			#workControls, #playControls{
+				width: 30%;
+        padding: 0 0 .1% 0;
+			}
+      
+      .controls h3{
+        width: 100%;
+        text-align: center;
+        margin: 0 0 1% 0;
+        line-height: 1.8em;
+      }
+      
+      .controls span{
+        padding: 1% 0;
+      }
+		}
+
+	/* Phones */
+		@media only screen and (min-width : 320px) and (max-width : 599px) {
+
+			h1{
+				font-size: 5em;
+			}
+      
+      .subheader h2{
+        display: block;
+        margin: 2% 0;
+        width: 100%;
+      }
+
+			.clock{
+				width: 100%;
+				margin: 5% 0 5% 0;
+			}
+
+			.clock button{
+				width: 20%;
+        margin-top: 0;
+			}
+      
+      .controls h2{
+        width: 100%;
+        text-align: center;
+        margin: 0 0;
+      }
+
+			#workControls, #playControls{
+				width: 40%;
+        padding: 0 0 .1% 0;
+			}
+      
+      .controls h3{
+        width: 100%;
+        text-align: center;
+        margin: 0 0 1% 0;
+        line-height: 1.8em;
+      }
+      
+      .controls span{
+        padding: 1% 0;
+      }
+
+		}
